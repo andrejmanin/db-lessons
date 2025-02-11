@@ -111,7 +111,7 @@ select Name from Departments where Building = 5 and Financing < 30000;
 select Name from Departments where Building = 3 and Financing between 12000 and 15000;
 select Name from Wards where Building between 4 and 5 and Floor = 1;
 select Name, Building, Financing from Departments where Building between 3 and 6 and Financing < 11000 or Financing > 25000;
-select Surname from Doctors where sum(Salary, Premium) > 1500;
+select Surname from Doctors where Salary + Premium > 1500;
 select Surname from Doctors where Salary / 2 > Premium * 3;
 select distinct Name from Examinations where DayOfWeek between 1 and 3 and StartTime = '12:00:00' and EndTime = '15:00:00';
 select Name, Building from Departments where Building in (1, 3, 8, 10);
